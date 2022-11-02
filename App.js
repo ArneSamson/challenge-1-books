@@ -11,8 +11,10 @@ export default function App() {
       
       <View style={styles.topbar}>
         <Text style={styles.title}>Bookshop</Text>
-        <Image style={styles.cartImg} source={require('./assets/cart.png')}></Image>
-        <Text>{cartitems}</Text>
+        <View style={styles.cartTile}>
+          <Image style={styles.cartImg} source={require('./assets/cart.png')}></Image>
+          <Text style={styles.cartCounter}>{cartitems}</Text>
+        </View>
       </View>
       
       <BookTile/>
@@ -29,19 +31,28 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-    marginTop: 30,
-    marginHorizontal: 10,
+    marginTop: 40,
+    marginHorizontal: 20,
   },
   topbar: {
-    alignItems: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     height: 100,
     width: '100%',
   },
+  cartTile: {
+    justifyContent: 'space-between',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
   cartImg: {
-    width: 60,
-    height: 60,
+    width: 50,
+    height: 48,
+  },
+  cartCounter: {
+    
   },
   title: {
     fontSize: 30,

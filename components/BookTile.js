@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, border} from 'react-native';
 
 const BookTile = (props) => {
     return (
@@ -10,13 +10,14 @@ const BookTile = (props) => {
 
 const styles = StyleSheet.create({
     tile: {
-        flexBasis: '48%',
+        width: '100%',
         height: 220,
         backgroundColor: '#',
         marginVertical: 10,
-        borderWidth: 1,
+        borderBottomWidth: 1,
         marginHorizontal: 3,
         borderColor: '#660066',
+        border
     }
 
 }) 

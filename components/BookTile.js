@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 const BookTile = (props) => {
     return (
         <View style={styles.tile}>
-
+            <Text>hello</Text>
         </View>
     )
 }
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
 
 }) 
 
-export default Booktile;
+export default BookTile;

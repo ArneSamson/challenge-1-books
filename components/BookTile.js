@@ -3,7 +3,18 @@ import {StyleSheet, Text, View, border} from 'react-native';
 const BookTile = (props) => {
     return (
         <View style={styles.tile}>
-            <Text>hello</Text>
+
+            <Text style={styles.bookTitle}>Book Title</Text>
+            <Text>by author Dingus Dangus</Text>
+
+            <Text>Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
+            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
+            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
+            Lorem Ipsum doler sit amet 
+            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
+            </Text>
+
+
         </View>
     )
 }
@@ -17,8 +28,11 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         marginHorizontal: 3,
         borderColor: '#660066',
-        border
-    }
+    },
+    bookTitle: {
+        fontWeight: 'bold',
+        fontSize: 24,
+    },
 
 }) 
 

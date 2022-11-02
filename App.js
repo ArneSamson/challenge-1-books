@@ -52,10 +52,10 @@ const styles = StyleSheet.create({
     height: 48,
   },
   cartCounter: {
-    
+
   },
   title: {
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: 'bold',
   },
 });

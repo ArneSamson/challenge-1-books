@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, border, ScrollView, Button, Pressable} from 'react-native';
+import {StyleSheet, Text, View, border, ScrollView, Button, Pressable, TouchableOpacity} from 'react-native';
 
 const BookTile = (props) => {
     return (
@@ -16,11 +16,11 @@ const BookTile = (props) => {
 
             <Text style={styles.isbnNumber}>ISBN {props.isbn}</Text>
 
-            <Button title="read"
-                onPress={()=>
+            <TouchableOpacity onPress={()=> 
                     console.log("book read button pressed.")
-                }
-            />
+                } style={styles.button}>
+                <Text>READ</Text>
+            </TouchableOpacity>
 
         </View>
     )
@@ -45,6 +45,10 @@ const styles = StyleSheet.create({
     },
     isbnNumber: {
         paddingTop: 20,
+    },
+    button: {
+        color: "black",
+        backgroundColor: '#F5f5f5',
     },
 }) 
 

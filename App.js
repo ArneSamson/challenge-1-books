@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   cartImg: {
-    width: 50,
-    height: 48,
+    width: 40,
+    height: 38,
   },
   cartCounter: {
 

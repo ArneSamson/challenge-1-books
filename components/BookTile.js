@@ -7,7 +7,7 @@ const BookTile = (props) => {
             <Text style={styles.bookTitle}>{props.title}</Text>
             <Text>by {props.author}</Text>
 
-            <Text>{props.description}</Text>
+            <Text style={styles.desc}>{props.description}</Text>
 
             <Text>ISBN {props.isbn}</Text>
 
@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
     bookTitle: {
         fontWeight: 'bold',
         fontSize: 24,
+    },
+    desc: {
+        paddingTop: 10,
     },
 
 }) 

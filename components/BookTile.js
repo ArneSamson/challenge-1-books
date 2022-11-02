@@ -4,9 +4,7 @@ const BookTile = (props) => {
     return (
         <View style={styles.tile}>
 
-            <Pressable onPress={()=>
-                    console.log("Book title pressed.")
-                }>
+            <Pressable onPress={logTitle}>
             <Text style={styles.bookTitle}>{props.title}</Text>
             </Pressable>
             <Text>by {props.author}</Text>
@@ -16,14 +14,20 @@ const BookTile = (props) => {
 
             <Text style={styles.isbnNumber}>ISBN {props.isbn}</Text>
 
-            <TouchableOpacity onPress={()=> 
-                    console.log("book read button pressed.")
-                } style={styles.button}>
+            <TouchableOpacity onPress={logRead} style={styles.button}>
                 <Text>READ</Text>
             </TouchableOpacity>
 
         </View>
     )
+}
+
+function logTitle(){
+    console.log("Book title pressed.")
+}
+
+function logRead(){
+    console.log("book read button pressed.")
 }
 
 const styles = StyleSheet.create({

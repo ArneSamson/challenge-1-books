@@ -17,7 +17,9 @@ export default function App() {
         </View>
       </View>
       
-      <BookTile title="American Psycho" isbn="90-414-0494-5" author="Bret Easton Ills" description="Om zijn oppervlakkige leven nog enige inhoud te geven komt een jongeman tot steeds gruwelijker daden."/>
+      <BookTile title="American Psycho" author="Bret Easton Ills" isbn="90-414-0494-5" description="Om zijn oppervlakkige leven nog enige inhoud te geven komt een jongeman tot steeds gruwelijker daden."/>
+      <BookTile title="Animal Farm" author="George Orwell" isbn="0-14-012670-8" description="De dieren nemen de macht over op de boerderij. Maar of de omstandigheden daardoor verbeteren, is de vraag. Persiflage op het dictatorschap en de totalitaire staat"/>
+      <BookTile title="Industrial Society and it's Future" author="Theodore John Kaczynski" isbn="1-54-450217-6" description="The Unabomber Manifesto: A Brilliant Madman's Essay on Technology, Society, and the Future of Humanity"/>
 
       <StatusBar style="auto" />
     

@@ -28,8 +28,9 @@ const BookTile = (props) => {
 
 const styles = StyleSheet.create({
     tile: {
+        padding: 0,
         width: '100%',
-        height: 190,
+        height: 200,
         backgroundColor: '#',
         marginVertical: 10,
         borderBottomWidth: 1,
@@ -49,6 +50,13 @@ const styles = StyleSheet.create({
     button: {
         color: "black",
         backgroundColor: '#F5f5f5',
+        borderColor: "black",
+        borderWidth: 2,
+        width: 45,
+        alignItems: "center",
+        justifyContent: "center",
+        marginLeft: "80%",
+        marginBottom: 10,
     },
 }) 
 

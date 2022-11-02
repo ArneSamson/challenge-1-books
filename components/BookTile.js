@@ -34,9 +34,8 @@ const styles = StyleSheet.create({
     tile: {
         padding: 0,
         width: '100%',
-        height: 200,
         backgroundColor: '#',
-        marginVertical: 10,
+        marginVertical: 20,
         borderBottomWidth: 1,
         marginHorizontal: 3,
         borderColor: '#660066',
@@ -52,6 +51,7 @@ const styles = StyleSheet.create({
         paddingTop: 20,
     },
     button: {
+        overflow: 'hidden',
         color: "black",
         backgroundColor: '#F5f5f5',
         borderColor: "black",

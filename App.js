@@ -51,9 +51,6 @@ const styles = StyleSheet.create({
     width: 40,
     height: 38,
   },
-  cartCounter: {
-
-  },
   title: {
     fontSize: 40,
     fontWeight: 'bold',

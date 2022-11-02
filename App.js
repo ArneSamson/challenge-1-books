@@ -17,7 +17,7 @@ export default function App() {
         </View>
       </View>
       
-      <BookTile/>
+      <BookTile title="American Psycho" isbn="90-414-0494-5" author="Bret Easton Ills" description="Om zijn oppervlakkige leven nog enige inhoud te geven komt een jongeman tot steeds gruwelijker daden."/>
 
       <StatusBar style="auto" />
     

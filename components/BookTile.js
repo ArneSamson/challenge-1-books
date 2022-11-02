@@ -4,16 +4,12 @@ const BookTile = (props) => {
     return (
         <View style={styles.tile}>
 
-            <Text style={styles.bookTitle}>Book Title</Text>
-            <Text>by author Dingus Dangus</Text>
+            <Text style={styles.bookTitle}>{props.title}</Text>
+            <Text>by {props.author}</Text>
 
-            <Text>Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
-            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
-            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
-            Lorem Ipsum doler sit amet 
-            Lorem Ipsum doler sit amet Lorem Ipsum doler sit amet 
-            </Text>
+            <Text>{props.description}</Text>
 
+            <Text>ISBN {props.isbn}</Text>
 
         </View>
     )
